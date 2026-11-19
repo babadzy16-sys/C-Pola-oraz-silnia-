@@ -1,9 +1,9 @@
 ﻿Console.WriteLine("Wybierz co chcesz obliczyć:");
-Console.WriteLine("1. Silnia");
-Console.WriteLine("2. Pole prostokąta");
-Console.WriteLine("3. Pole kwadratu");
-Console.WriteLine("4. Pole trójkąta");
-Console.WriteLine("5. Pole koła");
+Console.WriteLine("1. Pole prostokąta");
+Console.WriteLine("2. Pole kwadratu");
+Console.WriteLine("3. Pole trójkąta");
+Console.WriteLine("4. Pole koła");
+Console.WriteLine("5. Silnia");
 
 int wybor = StrToInt("Podaj swój wybór");
 int StrToInt(string text)
@@ -19,22 +19,7 @@ int StrToInt(string text)
         Console.WriteLine("Podaj prawidłową liczbę całkowitą.");
     }
 }
-int Silnia(int a)
-{
-    if (a < 0)
-    {
-        Console.WriteLine("Silnia jest określona tylko dla liczb nieujemnych.");
-        return 0;
-    }
 
-    int liczba = 1;
-    for (int i = 2; i <= liczba; i++)
-    {
-        liczba *= i;
-    }
-
-    return liczba;
-}
 switch (wybor)
 {
     case 1:
@@ -59,6 +44,23 @@ switch (wybor)
         double r = StrToDouble("Podaj promień");
         Console.WriteLine($"Pole koła: {3.14 * r * r} cm²");
         break;
+    case 5:
+        int Silnia(int a)
+{
+    if (a < 0)
+    {
+        Console.WriteLine("Silnia jest określona tylko dla liczb nieujemnych.");
+        return 0;
+    }
+
+    int liczba = 1;
+    for (int i = 2; i <= liczba; i++)
+    {
+        liczba *= i;
+    }
+
+    return liczba;
+}
     default:
         Console.WriteLine("Nieprawidłowy wybór.");
         break;
