@@ -1,4 +1,4 @@
-﻿Console.WriteLine("Wybierz co chcesz obliczyć przez funkcje:");
+﻿Console.WriteLine("Wybierz co chcesz obliczyć:");
 Console.WriteLine("1. Silnia");
 Console.WriteLine("2. Pole prostokąta");
 Console.WriteLine("3. Pole kwadratu");
